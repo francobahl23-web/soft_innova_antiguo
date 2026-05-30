@@ -1,0 +1,9 @@
+{
+  "automatizacion": {
+    "host": "smtp.zoho.com",
+    "port": 587,
+    "service": "smtp",
+    "user": "desarrollo@monic.com.ar",
+    "pass": "MnBvCxZqWeRtY102938!"
+  }
+}

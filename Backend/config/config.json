@@ -1,0 +1,47 @@
+{  
+    "development": {
+        "username": "usuario_remoto",
+        "password": "MySecurePassword123!",
+        "database": "turnero",
+        "host": "149.50.128.40",
+        "logging": false,
+        "dialect": "mysql",
+        "timezone": "-03:00",
+        "pool": {
+            "max": 20,
+            "min": 5,
+            "idle": 10000,
+            "acquire": 30000
+        }
+    },
+    "test": {    
+        "username": "root",
+        "password": "MnBvCxZqWeRtY102938!",
+        "database": "turnero",
+        "host": "db",
+        "logging": false,
+        "dialect": "mysql",
+        "timezone": "-03:00",
+        "pool": {
+            "max": 20,
+            "min": 5,
+            "idle": 10000,
+            "acquire": 30000
+        }
+    },
+    "production": {
+        "username": "root",
+        "password": "MnBvCxZqWeRtY102938!",
+        "database": "turnero",
+        "host": "db",
+        "logging": false,
+        "dialect": "mysql",
+        "timezone": "-03:00",
+        "pool": {
+            "max": 20,
+            "min": 5,
+            "idle": 10000,
+            "acquire": 30000
+        }
+    }
+}
