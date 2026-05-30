@@ -1,0 +1,234 @@
+@mixin generateFlex($breakpoint: null, $breakpointValue: 0px) {
+            
+    @if ($breakpoint != null) {
+
+        @media (max-width: $breakpointValue) {
+            .u-flex-center-center#{$breakpoint}{
+                @include flex-center-center();
+            }
+            
+            .u-flex-column-center-center#{$breakpoint}{
+                @include flex-column-center-center();
+            }
+
+            .u-flex-start-center#{$breakpoint}{
+                @include flex-start-center();
+            }
+
+            .u-flex-column-start-center#{$breakpoint}{
+                @include flex-column-start-center();
+            }
+            
+            .u-flex-center-start#{$breakpoint}{
+                @include flex-center-start();
+            }
+            
+            .u-flex-column-center-start#{$breakpoint}{
+                @include flex-column-center-start();
+            }
+            
+            .u-flex-center-end#{$breakpoint}{
+                @include flex-center-end();
+            }
+            
+            .u-flex-column-center-end#{$breakpoint}{
+                @include flex-column-center-end();
+            }
+            
+            .u-flex-start-space-around#{$breakpoint}{
+                @include flex-start-space-around();
+            }
+            
+            .u-flex-column-start-space-around#{$breakpoint}{
+                @include flex-column-start-space-around();
+            }
+            
+            .u-flex-end-space-around#{$breakpoint}{
+                @include flex-end-space-around();
+            }
+            
+            .u-flex-column-end-space-around#{$breakpoint}{
+                @include flex-column-end-space-around();
+            }
+            
+            .u-flex-center-space-around#{$breakpoint}{
+                @include flex-center-space-around();
+            }
+            
+            .u-flex-column-center-space-around#{$breakpoint}{
+                @include flex-column-center-space-around();
+            }
+            
+            .u-flex-start-space-between#{$breakpoint}{
+                @include flex-start-space-between();
+            }
+            
+            .u-flex-column-start-space-between#{$breakpoint}{
+                @include flex-column-start-space-between();
+            }
+            
+            .u-flex-start-start#{$breakpoint}{
+                @include flex-start-start();
+            }
+            
+            .u-flex-column-start-start#{$breakpoint}{
+                @include flex-column-start-start();
+            }
+
+            .u-flex-end-space-between#{$breakpoint}{
+                @include flex-end-space-between();
+            }
+            
+            .u-flex-column-end-space-between#{$breakpoint}{
+                @include flex-column-end-space-between();
+            }
+            
+            .u-flex-center-space-between#{$breakpoint}{
+                @include flex-center-space-between();
+            }
+            
+            .u-flex-column-center-space-between#{$breakpoint}{
+                @include flex-column-center-space-between();
+            }
+            
+            .u-flex--noGap#{$breakpoint}{
+                gap: 0 !important;
+            }
+        }
+    }
+    @else{
+        .u-flex{
+            @include flex();
+        }
+
+        .u-flex-center-center{
+            @include flex-center-center();
+        }
+
+        .u-flex-column-center-center{
+            @include flex-column-center-center();
+        }
+
+        .u-flex-start-center{
+            @include flex-start-center();
+        }
+
+        .u-flex-column-start-center{
+            @include flex-column-start-center();
+        }
+        
+        .u-flex-start-start{
+            @include flex-start-start();
+        }
+        
+        .u-flex-column-start-start{
+            @include flex-column-start-start();
+        }
+
+        .u-flex-center-start{
+            @include flex-center-start();
+        }
+
+        .u-flex-column-center-start{
+            @include flex-column-center-start();
+        }
+
+        .u-flex-center-end{
+            @include flex-center-end();
+        }
+
+        .u-flex-column-center-end{
+            @include flex-column-center-end();
+        }
+
+        .u-flex-start-space-around{
+            @include flex-start-space-around();
+        }
+
+        .u-flex-column-start-space-around{
+            @include flex-column-start-space-around();
+        }
+
+        .u-flex-end-space-around{
+            @include flex-end-space-around();
+        }
+
+        .u-flex-column-end-space-around{
+            @include flex-column-end-space-around();
+        }
+
+        .u-flex-center-space-around{
+            @include flex-center-space-around();
+        }
+
+        .u-flex-column-center-space-around{
+            @include flex-column-center-space-around();
+        }
+
+
+        .u-flex-start-space-between{
+            @include flex-start-space-between();
+        }
+
+        .u-flex-column-start-space-between{
+            @include flex-column-start-space-between();
+        }
+
+        .u-flex-end-space-between{
+            @include flex-end-space-between();
+        }
+
+        .u-flex-end-center{
+            @include flex-end-center();
+        }
+
+        .u-flex-center-end{
+            @include flex-center-end();
+        }
+
+        .u-flex-column-end-space-between{
+            @include flex-column-end-space-between();
+        }
+
+        .u-flex-center-space-between{
+            @include flex-center-space-between();
+        }
+
+        .u-flex-column-center-space-between{
+            @include flex-column-center-space-between();
+        }
+
+        .u-self_end{
+            justify-self: flex-end;
+        }
+
+        .u-self_end{
+            justify-self: flex-end;
+        }
+
+        .u-column_self_end{
+            align-self: flex-end;
+        }
+        
+        .u-flex--noGap{
+            gap: 0 !important;
+        }
+    }
+}
+
+
+$breakpoint-separator: \@ !default;
+
+@include generateFlex();
+
+@each $bp-name, $bp-value in $breakpoints {
+    @include generateFlex(#{$breakpoint-separator}#{$bp-name}, $bp-value);
+}
+
+.u-flex--wrap{
+    flex-wrap: wrap;
+}
+
+.u-flex--1{
+    flex: 1;
+}

@@ -1,0 +1,35 @@
+/**
+
+   ==========================================================================
+   #PAGE
+   ========================================================================== 
+
+   Este es un setup simple por defecto para una pagina.
+
+   1. Definimos `font-size` and `line-height` para todo el proyecto,
+   utilizando siempre nuestras variables por defecto. Siempre `font-size` es calculado
+   para estar en "em" o "rem", y `line-height` siempre sin unidad.
+
+   2. Forzamos el tipo de overflow en la altura a scroll por defecto.
+
+   3. Nos aseguramos que la pagina siempre cubra al menos el 100% viewport.
+
+**/
+
+html {
+   font-size: ($global-font-size / 16px) * 1em; /* [1] */
+   line-height: $global-line-height / $global-font-size; /* [1] */
+   min-height: 100vh;
+   max-width: 100vw;
+   min-width: 100vw;
+   overflow: hidden; /* [2] */
+   background-color: #ccc;
+}
+
+body{
+   min-height: 100vh;
+   max-width: 100vw;
+   min-width: 100vw;
+   position: relative;
+   overflow: hidden;    
+}

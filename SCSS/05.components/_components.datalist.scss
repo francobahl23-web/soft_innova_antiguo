@@ -1,0 +1,43 @@
+.c-datalist{
+    position: relative;
+    width: 100%;
+}
+
+.c-datalist__list {
+    list-style: none;
+    position: absolute;
+    margin: 0;
+    margin-top: -4px;
+    width: 100%;
+    border: 1px solid $global-primary-color;
+    border-top: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-height: 150px; /* Establece la altura máxima del desplegable según tus necesidades */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si es necesario */
+    border-bottom-left-radius: $global-radius * 0.25;
+    border-bottom-right-radius: $global-radius * 0.25;
+    z-index: 5;
+    
+    li:last-child{
+        border-bottom: none;
+    }
+}
+  
+.c-datalist__li {
+    padding: $global-spacing-unit-small $global-spacing-unit;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Agrega una transición para suavizar los cambios de color */
+    border-bottom: 1px dashed $global-secondary-color;
+
+    &:hover {
+        background-color:  $global-secondary-color;
+        color: #fff;
+    }
+
+    &--highlighted {
+        background-color: $global-secondary-color;
+        color: #fff;
+    }
+}
+  

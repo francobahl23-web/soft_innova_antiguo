@@ -1,0 +1,127 @@
+/**
+    ==========================================================================
+    #BUTTONS
+    ========================================================================== 
+
+    Esto es un ejemplo de componente. Las clases de componentes traen como prefijo `c-`.
+**/
+
+$button-primary-color:            $global-primary-color;
+$button-secondary-color:          $global-secondary-color;
+
+$button-padding-vertical:         $global-spacing-unit-small !default;
+$button-padding-horizontal:       $global-spacing-unit !default;
+$button-transition:               $global-transition !default;
+$button-radius:                   $global-radius !default;
+
+$button-small-padding-vertical:   $global-spacing-unit-tiny !default;
+$button-small-padding-horizontal: $global-spacing-unit-small !default;
+
+$button-large-padding-vertical:   $global-spacing-unit !default;
+$button-large-padding-horizontal: $global-spacing-unit-large !default;
+
+$button-ghost-border-width:       2px;
+ 
+/*
+    1. Allow us to style box model properties.
+    2. Sirve para alinear botones de diferentes tamañano un poco mejor.
+    3. Hereda nuestra fuente por defecto (Necesario capaz cuando se estilan `input`
+       como buttons).
+    4. Reseteamos algunos estilos.
+    5. Forzamos a que todos los botones figuren como clickeables.
+*/
+ 
+.c-button {
+    display: inline-block; /* [1] */
+    vertical-align: middle; /* [2] */
+    font: inherit; /* [3] */
+    text-align: center; /* [4] */
+    margin: 0; /* [4] */
+    cursor: pointer; /* [5] */
+    padding: $button-padding-vertical $button-padding-horizontal;
+    transition: $button-transition;
+    border-radius: $button-radius;
+    border: none;
+}
+ 
+ 
+ 
+ 
+ 
+/* 
+    Variantes de estilo
+    ==========================================================================
+*/
+ 
+.c-button--primary {
+    background-color: $button-primary-color;
+    
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none; /* [4] */
+        color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+        background: rgba(0,0,0,0);
+        color: $button-primary-color;
+        box-shadow: inset 0 0 0 3px $button-primary-color;
+    }
+ 
+}
+ 
+ 
+.c-button--secondary {
+    background-color: $button-secondary-color;
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &:hover,
+    &:focus {
+        background: rgba(0,0,0,0);
+        color: $button-secondary-color;
+        box-shadow: inset 0 0 0 3px $button-secondary-color;
+    }
+ 
+}
+ 
+ 
+ 
+/* 
+    Modificadores de tamaño
+    ========================================================================== 
+*/
+ 
+.c-button--small {
+    padding: $button-small-padding-vertical $button-small-padding-horizontal;
+}
+ 
+.c-button--large {
+    padding: $button-large-padding-vertical $button-large-padding-horizontal;
+}
+.c-fixed-print-button {
+    background-color: $button-primary-color;
+    color: white;
+    transition: $button-transition;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .c-fixed-print-button:hover {
+    border: 5px solid $button-primary-color;
+    color: $button-primary-color;
+    background-color: white;
+
+  }

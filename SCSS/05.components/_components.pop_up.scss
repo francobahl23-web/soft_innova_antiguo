@@ -1,0 +1,41 @@
+.c-pop_up{
+    top: 15px;
+    right: 15px;
+    position: fixed;
+    height: max-content;
+    max-height: 90vh;
+    max-width: 80vw;
+    width: max-content;
+    z-index: 999;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 1px 3px 13px 0px black;
+    padding: $global-spacing-unit;
+    overflow: auto;
+    border-radius: $global-radius-small;
+
+    @media (max-width: 550px) {
+        right: 0;
+        width: 100vw;
+        max-width: unset;
+    }
+}
+
+.c-pop_up--centered{
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+    @media (max-width: 550px) {
+        right: 0;
+        transform: translate(0, -50%);
+    }
+}
+
+.c-pop_up__close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: $global-primary-color;
+}

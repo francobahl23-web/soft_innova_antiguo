@@ -1,0 +1,33 @@
+$container_height: 50vh;
+
+
+.c_venta{
+    user-select: none;
+}
+
+.c_venta__container{
+    height: $container_height;
+    overflow: hidden;
+}
+
+.c_venta__items_container{
+    overflow: hidden;
+    min-width: 1166px;
+    padding-top: $global-spacing-unit;
+}
+
+.c_venta__header{
+    min-width: 1166px;
+    border-bottom: 2px dashed $global-secondary-color;
+}
+
+.c_venta__scroll{
+    height: $container_height;
+    width: 100%;
+    overflow-y: auto;
+    overflow-X: auto;
+}
+
+.c_venta__item{
+    height: 80px;
+}

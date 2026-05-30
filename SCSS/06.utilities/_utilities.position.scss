@@ -1,0 +1,17 @@
+.u-position--relative{
+    position: relative !important;
+}
+
+.u-position--absolute{
+    position: absolute !important;
+}
+
+.u-position--sticky{
+    position: sticky !important;
+}
+
+.u-absolute--top_right{
+    position: absolute;
+    top: 32px;
+    right: $global-spacing-unit;
+}

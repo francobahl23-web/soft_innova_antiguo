@@ -1,0 +1,31 @@
+.c-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: $global-secondary-color;
+    padding: 15px;
+    font-size: 14px;
+    transition: $global-transition;
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.c-footer--copyright{
+    font-weight: 700;
+}
+
+
+.c-footer--link{
+    text-decoration: none;
+    color: $global-primary-color;
+    font-weight: 700;
+}

@@ -1,0 +1,81 @@
+/**
+    ==========================================================================
+    #Sidebar
+    ========================================================================== 
+
+    Esto es un ejemplo de componente. Las clases de componentes traen como prefijo `c-`.
+**/
+@use "sass:map";
+
+.c-sidebar{
+    min-height: calc(100vh - $global-nav-height - $global-footer-height);
+    max-height: calc(100vh - $global-nav-height - $global-footer-height);
+    width: $global-sidebar-min-width;
+    margin-top: $global-nav-height;
+    background-color: $global-primary-color;
+    transition: $global-transition;
+    position: fixed;
+    z-index: 6;    
+    overflow: auto;
+    overflow-x: hidden;
+    height: -webkit-fill-available;
+
+    @media (max-width: 768px) {
+        width: 0;
+        
+        &--active{
+            width: $global-sidebar-max-width;
+        }
+    }
+
+    &--active{
+        width: $global-sidebar-max-width;
+        left: 0;
+    }
+}
+
+.c-sidebar__menu{
+    height: auto;
+    transition: $global-transition;
+}
+
+.c-sidebar__link{
+    padding: 12px 5px 12px 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+    white-space: nowrap;
+    @include font-size(16px);
+    color: white;
+
+    span {
+      text-overflow: ellipsis;
+      width: 80%;
+      white-space: break-spaces; 
+    }
+
+    &:hover, &.active{
+        border-color: $global-primary-color;
+        background-color: $global-secondary-color;
+        color: $global-primary-color;
+    }
+
+    &:active{
+        border-color: $global-primary-color;
+        background-color: $global-secondary-color;
+        color: $global-primary-color;
+    }
+    
+    & svg{
+        font-size: 16px;
+    }
+
+    &--submenu{
+        padding-left: 35px;
+    }
+}
+

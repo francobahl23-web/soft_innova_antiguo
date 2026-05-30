@@ -1,0 +1,16 @@
+/**
+    ======================================================================
+    #Elements
+    ======================================================================
+
+    Se empieza a especificar un poco mas el CSS, aqui solo se vera el CSS
+    aplicado a etiquetas especificas como estilo de 'h1', 'img', 'html', etc.
+
+**/
+
+@import "./elements.headings";
+@import "./elements.images";
+@import "./elements.page";
+@import "./elements.nav";
+@import "./elements.footer";
+@import "./elements.textarea";

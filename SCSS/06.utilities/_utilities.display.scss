@@ -1,0 +1,27 @@
+@mixin generateDisplays($breakpoint: null, $breakpointValue: 0px) {
+            
+    @if ($breakpoint != null) {
+
+        @media (max-width: $breakpointValue) {
+            .u-display--block#{$breakpoint}{
+                display: block;
+            }
+        }
+    }
+
+    .u-display--block{
+        display: block;
+    }
+}
+
+$breakpoint-separator: \@ !default;
+
+@include generateDisplays(null, null);
+
+@each $bp-name, $bp-value in $breakpoints {
+    @include generateDisplays(#{$breakpoint-separator}#{$bp-name}, $bp-value);
+}
+
+.u-display--none{
+    display: none;
+}

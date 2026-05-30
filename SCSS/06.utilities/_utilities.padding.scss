@@ -1,0 +1,397 @@
+/**
+    ==========================================================================
+    #PADDINGS
+    ========================================================================== 
+
+
+**/
+
+$padding-tiny:   $global-spacing-unit-tiny !default;
+$padding-small:   $global-spacing-unit-small !default;
+$padding:   $global-spacing-unit !default;
+$padding-large:   $global-spacing-unit-large !default;
+$padding-huge:   $global-spacing-unit-huge !default;
+
+
+@mixin generatePaddings($breakpoint: null, $breakpointValue: null) {
+    @if($breakpoint == null)
+    {
+        .u-p{
+            padding: 1px !important;
+        }
+        
+        .u-p--horizontal{
+            padding-inline: 1px !important;
+        }
+        
+        .u-p--vertical{
+            padding-block: 1px !important;
+        }
+        
+        .u-p--top{
+            padding-top: 1px !important;
+        }
+        
+        .u-p--right{
+            padding-right: 1px !important;
+        }
+        
+        .u-p--bottom{
+            padding-bottom: 1px !important;
+        }
+        
+        .u-p--left{
+            padding-left: 1px !important;
+        }
+        
+        .u-p1{
+            padding: $padding-tiny !important;
+        }
+        
+        .u-p1--horizontal{
+            padding-inline: $padding-tiny !important;
+        }
+        
+        .u-p1--vertical{
+            padding-block: $padding-tiny !important;
+        }
+        
+        .u-p1--top{
+            padding-top: $padding-tiny !important;
+        }
+        
+        .u-p1--right{
+            padding-right: $padding-tiny !important;
+        }
+        
+        .u-p1--bottom{
+            padding-bottom: $padding-tiny !important;
+        }
+        
+        .u-p1--left{
+            padding-left: $padding-tiny !important;
+        }
+        
+        .u-p2{
+            padding: $padding-small !important;
+        }
+        
+        .u-p2--horizontal{
+            padding-inline: $padding-small !important;
+        }
+        
+        .u-p2--vertical{
+            padding-block: $padding-small !important;
+        }
+        
+        .u-p2--top{
+            padding-top: $padding-small !important;
+        }
+        
+        .u-p2--right{
+            padding-right: $padding-small !important;
+        }
+        
+        .u-p2--bottom{
+            padding-bottom: $padding-small !important;
+        }
+        
+        .u-p2--left{
+            padding-left: $padding-small !important;
+        }
+        
+        .u-p3{
+            padding: $padding !important;
+        }
+        
+        .u-p3--horizontal{
+            padding-inline: $padding !important;
+        }
+        
+        .u-p3--vertical{
+            padding-block: $padding !important;
+        }
+        
+        .u-p3--top{
+            padding-top: $padding !important;
+        }
+        
+        .u-p3--right{
+            padding-right: $padding !important;
+        }
+        
+        .u-p3--bottom{
+            padding-bottom: $padding !important;
+        }
+        
+        .u-p3--left{
+            padding-left: $padding !important;
+        }
+        
+        .u-p4{
+            padding: $padding-large !important;
+        }
+        
+        .u-p4--horizontal{
+            padding-inline: $padding-large !important;
+        }
+        
+        .u-p4--vertical{
+            padding-block: $padding-large !important;
+        }
+        
+        .u-p4--top{
+            padding-top: $padding-large !important;
+        }
+        
+        .u-p4--right{
+            padding-right: $padding-large !important;
+        }
+        
+        .u-p4--bottom{
+            padding-bottom: $padding-large !important;
+        }
+        
+        .u-p4--left{
+            padding-left: $padding-large !important;
+        }
+        
+        .u-p5{
+            padding: $padding-huge !important;
+        }
+        
+        .u-p5--horizontal{
+            padding-inline: $padding-huge !important;
+        }
+        
+        .u-p5--vertical{
+            padding-block: $padding-huge !important;
+        }
+        
+        .u-p5--top{
+            padding-top: $padding-huge !important;
+        }
+        
+        .u-p5--right{
+            padding-right: $padding-huge !important;
+        }
+        
+        .u-p5--bottom{
+            padding-bottom: $padding-huge !important;
+        }
+        
+        .u-p5--left{
+            padding-left: $padding-huge !important;
+        }
+        
+        .u-nop{
+            padding: 0 !important;
+        }
+
+        .u-nop--right{
+            padding-right: 0 !important;
+        }
+
+        .u-nop--left{
+            padding-left: 0 !important;
+        }
+
+        .u-nop--top{
+            padding-top: 0 !important;
+        }
+
+        .u-nop--bottom{
+            padding-bottom: 0 !important;
+        }
+
+        .u-nop--horizontal{
+            padding-inline: 0 !important;
+        }
+        
+        .u-nop--vertical{
+            padding-block: 0 !important;
+        }
+    }
+    @else{
+        @media (max-width: $breakpointValue) {
+            .u-p\@#{$breakpoint}{
+                padding: 1px !important;
+            }
+            
+            .u-p--horizontal\@#{$breakpoint}{
+                padding-inline: 1px !important;
+            }
+            
+            .u-p--vertical\@#{$breakpoint}{
+                padding-block: 1px !important;
+            }
+            
+            .u-p--top\@#{$breakpoint}{
+                padding-top: 1px !important;
+            }
+            
+            .u-p--right\@#{$breakpoint}{
+                padding-right: 1px !important;
+            }
+            
+            .u-p--bottom\@#{$breakpoint}{
+                padding-bottom: 1px !important;
+            }
+            
+            .u-p--left\@#{$breakpoint}{
+                padding-left: 1px !important;
+            }
+            
+            .u-p1\@#{$breakpoint}{
+                padding: $padding-tiny !important;
+            }
+            
+            .u-p1--horizontal\@#{$breakpoint}{
+                padding-inline: $padding-tiny !important;
+            }
+            
+            .u-p1--vertical\@#{$breakpoint}{
+                padding-block: $padding-tiny !important;
+            }
+            
+            .u-p1--top\@#{$breakpoint}{
+                padding-top: $padding-tiny !important;
+            }
+            
+            .u-p1--right\@#{$breakpoint}{
+                padding-right: $padding-tiny !important;
+            }
+            
+            .u-p1--bottom\@#{$breakpoint}{
+                padding-bottom: $padding-tiny !important;
+            }
+            
+            .u-p1--left\@#{$breakpoint}{
+                padding-left: $padding-tiny !important;
+            }
+            
+            .u-p2\@#{$breakpoint}{
+                padding: $padding-small !important;
+            }
+            
+            .u-p2--horizontal\@#{$breakpoint}{
+                padding-inline: $padding-small !important;
+            }
+            
+            .u-p2--vertical\@#{$breakpoint}{
+                padding-block: $padding-small !important;
+            }
+            
+            .u-p2--top\@#{$breakpoint}{
+                padding-top: $padding-small !important;
+            }
+            
+            .u-p2--right\@#{$breakpoint}{
+                padding-right: $padding-small !important;
+            }
+            
+            .u-p2--bottom\@#{$breakpoint}{
+                padding-bottom: $padding-small !important;
+            }
+            
+            .u-p2--left\@#{$breakpoint}{
+                padding-left: $padding-small !important;
+            }
+            
+            .u-p3\@#{$breakpoint}{
+                padding: $padding !important;
+            }
+            
+            .u-p3--horizontal\@#{$breakpoint}{
+                padding-inline: $padding !important;
+            }
+            
+            .u-p3--vertical\@#{$breakpoint}{
+                padding-block: $padding !important;
+            }
+            
+            .u-p3--top\@#{$breakpoint}{
+                padding-top: $padding !important;
+            }
+            
+            .u-p3--right\@#{$breakpoint}{
+                padding-right: $padding !important;
+            }
+            
+            .u-p3--bottom\@#{$breakpoint}{
+                padding-bottom: $padding !important;
+            }
+            
+            .u-p3--left\@#{$breakpoint}{
+                padding-left: $padding !important;
+            }
+            
+            .u-p4\@#{$breakpoint}{
+                padding: $padding-large !important;
+            }
+            
+            .u-p4--horizontal\@#{$breakpoint}{
+                padding-inline: $padding-large !important;
+            }
+            
+            .u-p4--vertical\@#{$breakpoint}{
+                padding-block: $padding-large !important;
+            }
+            
+            .u-p4--top\@#{$breakpoint}{
+                padding-top: $padding-large !important;
+            }
+            
+            .u-p4--right\@#{$breakpoint}{
+                padding-right: $padding-large !important;
+            }
+            
+            .u-p4--bottom\@#{$breakpoint}{
+                padding-bottom: $padding-large !important;
+            }
+            
+            .u-p4--left\@#{$breakpoint}{
+                padding-left: $padding-large !important;
+            }
+            
+            .u-p5\@#{$breakpoint}{
+                padding: $padding-huge !important;
+            }
+            
+            .u-p5--horizontal\@#{$breakpoint}{
+                padding-inline: $padding-huge !important;
+            }
+            
+            .u-p5--vertical\@#{$breakpoint}{
+                padding-block: $padding-huge !important;
+            }
+            
+            .u-p5--top\@#{$breakpoint}{
+                padding-top: $padding-huge !important;
+            }
+            
+            .u-p5--right\@#{$breakpoint}{
+                padding-right: $padding-huge !important;
+            }
+            
+            .u-p5--bottom\@#{$breakpoint}{
+                padding-bottom: $padding-huge !important;
+            }
+            
+            .u-p5--left\@#{$breakpoint}{
+                padding-left: $padding-huge !important;
+            }
+            
+            .u-nop\@#{$breakpoint}{
+                padding: 0 !important;
+            }
+        }
+    }
+}
+
+@include generatePaddings();
+
+
+@each $bp-name, $bp-value in $breakpoints {
+    @include generatePaddings(#{$bp-name}, $bp-value);
+}

@@ -1,0 +1,68 @@
+
+
+
+
+
+.c-multiplechoice{
+    border-radius: $global-radius;
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.5);
+    width: fit-content;
+    @include flex-column-center-start();
+    padding-inline: 15px;
+    cursor: pointer;
+}
+
+.c-multiplechoice__option{
+    position: relative;
+    border-radius: 5px;
+    width: 90%;
+    min-height: 60px;
+    max-height: 60px;
+
+    span{
+        transition: all ease-in-out 250ms;
+        @include font-size(18px);
+        position: absolute;
+        left: 10px;
+        top: calc(30px - 13px);
+        z-index: 2;
+        cursor: pointer;
+    }
+}
+
+.c-multiplechoice__option--focused{
+    padding-bottom: 0 !important;
+
+    span{
+        @include font-size(14px);
+        left: 10px;
+        top: 2px;
+    }
+
+    input{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 15px;
+        padding: 10px 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.c-multiplechoice__plus{
+    margin-block: auto;
+    @include font-size(24px);
+    color: $global-primary-color;
+}
+
+.c-multiplechoice__pool{
+    width: calc(100% + 30px);
+    border-top: 1px dashed #ccc;
+    margin-left: -15px;
+    @include flex-center-space-around();
+    padding-top: 15px;
+    padding-inline: 30px;
+}

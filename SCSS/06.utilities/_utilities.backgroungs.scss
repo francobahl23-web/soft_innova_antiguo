@@ -1,0 +1,22 @@
+/**
+    ==========================================================================
+    #BACKGROUND
+    ========================================================================== 
+
+    Crearemos aqui clases de utilidad que nos ayudaran a aplicar distintos colores
+    a nuestros componentes o objetos.
+
+**/
+
+.u-background--white{
+    background-color: white;
+}
+
+
+.u-background--primary{
+    background: $global-primary-color;
+}
+
+.u-background--secondary{
+    background: $global-secondary-color;
+}

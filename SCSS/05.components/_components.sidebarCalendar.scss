@@ -1,0 +1,48 @@
+.c-sidebarCalendar{
+    position: fixed;
+    top: $global-nav-height;
+    bottom: 0;
+    left: -320px;
+    background-color: white;
+    transition: all ease-in-out 0.5s;
+    z-index: 2;
+
+    &--open{
+        left: 0;
+    }
+
+    &--blocked{
+        &::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+            z-index: 99999;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    @media (max-width: 763px) {
+        width: 100vw;
+        left: -100vw;
+        bottom: unset;
+        background-color: #f0f0f0;
+        
+        &--open{
+            left: 0;
+        }
+    }
+}
+
+.c-sidebarCalendar__item{
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-block: 10px;
+}

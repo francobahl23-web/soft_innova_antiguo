@@ -1,0 +1,34 @@
+/**
+    ==========================================================================
+    #RANDOM
+    ========================================================================== 
+
+    Crearemos aqui clases de utilidad que no tiene un alcance como para dedicarle un archivo entero.
+
+**/
+
+.u-rounded{
+    border-radius: 100%;
+}
+
+.u-border_radius{
+    border-radius: $global-radius;
+}
+
+.u-display--none{
+    display: none;
+}
+
+.u-hidden{
+    @include hidden-visually();
+}
+
+.u-overflow--hidden{
+    overflow: hidden;
+}
+
+
+.u-cover{
+    height: 100%;
+    width: 100%;
+}

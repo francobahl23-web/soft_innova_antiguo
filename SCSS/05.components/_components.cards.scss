@@ -1,0 +1,34 @@
+/**
+    ==========================================================================
+    #Cards
+    ========================================================================== 
+
+    Esto es un ejemplo de componente. Las clases de componentes traen como prefijo `c-`.
+    Seran componentes que nos ayudaran a contener informacion con cierto estilo que resalte
+    de la pagina.
+
+**/
+
+.c-card{
+    background-color: white;
+    border-radius: $global-radius;
+    width: fit-content;
+    flex-shrink: 0;
+}
+
+.c-card__titulo{
+    border-top-left-radius: $global-radius;
+    border-top-right-radius: $global-radius;
+    background-color: #0CC2AA;
+    position: relative;
+    @include flex-center-space-between();
+
+
+    > svg{
+        cursor: pointer;
+    }
+}
+
+.c-card--centered{
+    text-align: center;
+}

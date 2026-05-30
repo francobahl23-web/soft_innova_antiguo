@@ -1,0 +1,52 @@
+/**
+    ==========================================================================
+    #TEXT
+    ========================================================================== 
+
+    Crearemos aqui clases de utilidad referidas al texto.
+
+**/
+
+$sizes: 0 1 2 3 4 5 !default;
+
+@mixin createFonts($breakpoint: null, $breakpointValue: null, $columns){
+    @if ($breakpoint != null) {
+        @media (max-width: $breakpointValue) {
+            @each $denominator in $columns {
+                .u-text--#{$denominator}#{$breakpoint}{
+                    @include font-size((14px + (4px * $denominator)))
+                }
+            }
+        }
+    }
+    @else{
+        @each $denominator in $columns {
+            .u-text--#{$denominator}{
+                @include font-size((14px + (4px * $denominator)))
+            }
+        }
+    }
+}
+
+$breakpoint-separator: \@ !default;
+@include createFonts(null, null, $sizes);
+
+@each $bp-name, $bp-value in $breakpoints {
+    @include createFonts(#{$breakpoint-separator}#{$bp-name}, $bp-value, $sizes);
+}
+
+.u-text--bold{
+    font-weight: bold;
+}
+
+.u-text_align--center{
+    text-align: center;
+}
+
+.u-text_align--start{
+    text-align: start;
+}
+
+.u-text_align--end{
+    text-align: end;
+}

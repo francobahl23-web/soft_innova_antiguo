@@ -1,0 +1,27 @@
+/** 
+    ==========================================================================
+    #NAV
+    ========================================================================== 
+
+    Daremos estilo a nuestro nav bar.
+    
+**/
+
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: $global-nav-height;
+    background-color: $global-primary-color;
+    @include flex-center-space-between();
+    z-index: 4;
+
+    > *{
+        height: 90%;
+    }
+
+    img{
+        height: 100%;
+        width: auto;
+    }
+}

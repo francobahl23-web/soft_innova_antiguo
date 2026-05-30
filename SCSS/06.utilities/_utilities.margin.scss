@@ -1,0 +1,213 @@
+/**
+    ==========================================================================
+    #MARGINS
+    ========================================================================== 
+
+
+**/
+
+$margin-tiny:   $global-spacing-unit-tiny !default;
+$margin-small:   $global-spacing-unit-small !default;
+$margin:   $global-spacing-unit !default;
+$margin-large:   $global-spacing-unit-large !default;
+$margin-huge:   $global-spacing-unit-huge !default;
+
+.u-m{
+    margin: 1px;
+}
+
+.u-m--horizontal{
+    margin-inline: 1px;
+}
+
+.u-m--vertical{
+    margin-block: 1px;
+}
+
+.u-m--top{
+    margin-top: 1px;
+}
+
+.u-m--right{
+    margin-right: 1px;
+}
+
+.u-m--bottom{
+    margin-bottom: 1px;
+}
+
+.u-m--left{
+    margin-left: 1px;
+}
+
+.u-m1{
+    margin: $margin-tiny;
+}
+
+.u-m1--horizontal{
+    margin-inline: $margin-tiny;
+}
+
+.u-m1--vertical{
+    margin-block: $margin-tiny;
+}
+
+.u-m1--top{
+    margin-top: $margin-tiny;
+}
+
+.u-m1--right{
+    margin-right: $margin-tiny;
+}
+
+.u-m1--bottom{
+    margin-bottom: $margin-tiny;
+}
+
+.u-m1--left{
+    margin-left: $margin-tiny;
+}
+
+.u-m2{
+    margin: $margin-small;
+}
+
+.u-m2--horizontal{
+    margin-inline: $margin-small;
+}
+
+.u-m2--vertical{
+    margin-block: $margin-small;
+}
+
+.u-m2--top{
+    margin-top: $margin-small;
+}
+
+.u-m2--right{
+    margin-right: $margin-small;
+}
+
+.u-m2--bottom{
+    margin-bottom: $margin-small;
+}
+
+.u-m2--left{
+    margin-left: $margin-small;
+}
+
+.u-m3{
+    margin: $margin;
+}
+
+.u-m3--horizontal{
+    margin-inline: $margin;
+}
+
+.u-m3--vertical{
+    margin-block: $margin;
+}
+
+.u-m3--top{
+    margin-top: $margin;
+}
+
+.u-m3--right{
+    margin-right: $margin;
+}
+
+.u-m3--bottom{
+    margin-bottom: $margin;
+}
+
+.u-m3--left{
+    margin-left: $margin;
+}
+
+.u-m4{
+    margin: $margin-large;
+}
+
+.u-m4--horizontal{
+    margin-inline: $margin-large;
+}
+
+.u-m4--vertical{
+    margin-block: $margin-large;
+}
+
+.u-m4--top{
+    margin-top: $margin-large;
+}
+
+.u-m4--right{
+    margin-right: $margin-large;
+}
+
+.u-m4--bottom{
+    margin-bottom: $margin-large;
+}
+
+.u-m4--left{
+    margin-left: $margin-large;
+}
+
+.u-m5{
+    margin: $margin-huge;
+}
+
+.u-m5--horizontal{
+    margin-inline: $margin-huge;
+}
+
+.u-m5--vertical{
+    margin-block: $margin-huge;
+}
+
+.u-m5--top{
+    margin-top: $margin-huge;
+}
+
+.u-m5--right{
+    margin-right: $margin-huge;
+}
+
+.u-m5--bottom{
+    margin-bottom: $margin-huge;
+}
+
+.u-m5--left{
+    margin-left: $margin-huge;
+}
+
+.u-m_auto{
+    margin: auto;
+}
+
+.u-m_auto--vertical{
+    margin-block: auto;
+}
+
+.u-m_auto--horizontal{
+    margin-inline: auto;
+}
+
+.u-m_auto--top{
+    margin-top: auto;
+}
+
+.u-m_auto--bottom{
+    margin-bottom: auto;
+}
+
+.u-m_auto--left{
+    margin-left: auto;
+}
+
+.u-m_auto--right{
+    margin-right: auto;
+}
+
+.u-no_m{
+    margin: 0 !important;
+}

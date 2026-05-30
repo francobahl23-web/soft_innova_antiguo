@@ -1,0 +1,33 @@
+/**
+    ==========================================================================
+    #BACKGROUND
+    ========================================================================== 
+
+    Crearemos aqui clases de utilidad que nos ayudaran a aplicar distintos colores
+    a nuestras fuentes.
+
+**/
+
+.u-color--white{
+    color: white;
+}
+
+.u-color--black{
+    color: black;
+}
+
+.u-color--red{
+    color: red;
+}
+
+.u-color--green{
+    color: green;
+}
+
+.u-color--primary{
+    color: $global-primary-color;
+}
+
+.u-color--secondary{
+    color: $global-secondary-color;
+}

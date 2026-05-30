@@ -1,0 +1,26 @@
+/** 
+    ==========================================================================
+    #Animations
+    ========================================================================== 
+
+    Aqui podremos crear diversas animaciones para agregar a nuestros objetos
+    o componentes.
+    
+**/
+
+.cursor_animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    pointer-events: none;
+    transition: $global-transition;
+
+    > img{
+        width: 100px;
+        height: 100px;
+
+    }
+}
+  
+  

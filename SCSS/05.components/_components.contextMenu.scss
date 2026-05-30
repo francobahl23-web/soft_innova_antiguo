@@ -1,0 +1,46 @@
+.c-context_menu{
+    position: fixed;
+    width: 200px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    color: $global-primary-color;
+    box-shadow: 2px 2px 0 rgba($color: #000000, $alpha: 0.5);
+    z-index: 6;
+    overflow: hidden;
+}
+
+.c-context_menu--item{
+    width: 100%;
+    border-bottom: 1px dashed $global-secondary-color;
+    padding: 6px;
+    @include flex-start-center();
+    cursor: pointer;
+
+    &:hover{
+        background: #ccc;
+    }
+
+    & span{
+        width: 90%;
+        text-align: start;
+        word-break: break-all;
+    }
+
+    & a{
+        text-decoration: none;
+        width: 90%;
+        text-align: start;
+        word-break: break-all;
+        color: white;
+    }
+
+    & svg{
+        width: 10%;
+        font-size: 1.7rem;
+    }
+
+    &:last-child{
+        border-bottom: none;
+    }
+}

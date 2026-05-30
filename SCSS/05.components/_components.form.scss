@@ -1,0 +1,45 @@
+/**
+    ==========================================================================
+    #form
+    ========================================================================== 
+**/
+
+/* Formulario Tema Claro */
+.c-form-theme-light {
+  @include flex-column-center-start();
+  padding: $global-spacing-unit-tiny;
+  width: 100%;
+  color: $global-primary-color; /* Color de letras para el tema claro */
+  background-color: white; /* Fondo del formulario para el tema claro */
+}
+
+.c-form-theme-light__title {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.c-form-theme-light__subtitle {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Estilos para elementos del formulario en tema claro */
+.c-form-theme-light input, .c-form-theme-light div , .c-form-theme-light span{
+  background-color: white !important; /* Color de fondo para inputs y botones en tema claro */
+  color: black !important; /* Color de letras para inputs y botones en tema claro */
+  border-radius: 8px; /* Radio de borde para inputs y botones en tema claro */
+  font-family: 'Segoe UI', sans-serif; /* Fuente para inputs y botones en tema claro */
+}
+.c-form-theme-light div{
+  border: 1px solid $global-primary-color;
+}
+.c-form-theme-light span {
+  color: $global-primary-color !important; /* Color de letras para spans en tema claro */
+}
+

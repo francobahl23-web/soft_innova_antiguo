@@ -1,0 +1,72 @@
+.c-calendar{
+    width: 280px;
+    @include font-size(12px);
+    background-color: white;
+    color: $global-primary-color;
+
+    @media (max-width: 763px) {
+        width: 100vw;
+        background-color: #f0f0f0;
+    }
+}
+
+.c-calendar__header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-calendar__body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    &--months{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.c-calendar__day {
+    padding: 10px 6.6667px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #ccc;
+    }
+
+    &--actual{
+        background-color: rgba(255, 193, 7, 0.25);
+    }
+
+    &--selected{
+        background-color: $global-primary-color;
+        color: white;
+    }
+}
+
+.c-calendar__button{
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+    color: $global-primary-color;
+
+    &:hover{
+        background-color: #ccc;
+    }
+
+    @media (max-width: 763px) {
+        background-color: #f0f0f0;
+    }
+}
+
+.c-calendar__dateWrapper{
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+
+    &:hover{
+        background-color: #ccc;
+    }
+}

@@ -1,0 +1,45 @@
+.c-nuevo_bloqueo{
+    width: max(400px, 40vw);
+    max-height: 80vh;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 25px 15px;
+    overflow: auto;
+    border-radius: $global-radius-small;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-nuevo_bloqueo__item{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+
+    & > div{
+        width: 100%;
+    }
+
+    &--right{
+        justify-content: end;
+    }
+}
+
+.c-nuevo_bloqueo__hora{
+    @include flex-center-space-around();
+
+    & > div{
+        width: min-content;
+        flex: 1 1 50%;
+    }
+
+    & .c-datepicker{
+        width: 100%;
+    }
+}
+
+.c-nuevo_bloqueo__end{
+    margin-top: auto;
+}

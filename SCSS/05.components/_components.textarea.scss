@@ -1,0 +1,10 @@
+.c-textarea{
+    width: 100%;
+    min-height: 80px;
+    border-radius: 5px;
+    border: 1px solid $global-primary-color;
+    outline: none;
+    resize: none;
+    font: inherit;
+    padding: $global-spacing-unit-tiny $global-spacing-unit;
+}
